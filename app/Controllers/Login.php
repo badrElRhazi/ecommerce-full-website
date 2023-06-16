@@ -38,10 +38,10 @@ class login extends ClassLogin{
                 $result=$login->find2($email,$password);
                 
                 if($result!==false){
-                    redirect('page.php');
+                    redirect('productController');
                 }
                 else{
-                    echo 'erooooooooooooooorr';
+                    echo 'Wrong password, please try again !';
                 }
             }
            
