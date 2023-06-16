@@ -83,7 +83,7 @@ session_start();
                                             <span class="old_price">$62.00</span>
                                         </div>
                                         <div class="add_to_cart">
-                                            <a class="btn btn-primary" href="shortsdetails?id=<?=$product->id?>" data-tippy="Add To Cart"
+                                            <a class="btn btn-primary"  data-tippy="Add To Cart"
                                                 data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true"
                                                 data-tippy-placement="top">Add To Cart</a>
                                         </div>
