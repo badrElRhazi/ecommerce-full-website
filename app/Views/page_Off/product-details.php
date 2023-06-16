@@ -31,21 +31,21 @@
 
     <!-- CSS
     ========================= -->
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/slick.css">
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/simple-line-icons.css">
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/ionicons.min.css">
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/font.awesome.css">
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/animate.css">
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/nice-select.css">
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/magnific-popup.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/slick.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/simple-line-icons.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/ionicons.min.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/font.awesome.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/animate.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/nice-select.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/jquery-ui.min.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/magnific-popup.css">
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="../../../public/assets/front/cssf/style.css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/front/cssf/style.css">
 
     <!--modernizr min js here-->
-    <script src="../../../public/assets/front/jsf/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="<?=ROOT?>/assets/front/jsf/vendor/modernizr-3.7.1.min.js"></script>
 
 
     <!-- Structured Data  -->
@@ -156,9 +156,9 @@
             </div>
             <div class="cart_item">
                <div class="cart_img">
-                   <a href="#"><img src="../../../public/assets/front/imgf/product/product1.jpg" alt=""></a>
+                   <a href="#"><img src="<?=ROOT?>/assets/front/imgf/product/product1.jpg" alt=""></a>
                </div>
-                <div class="cart_info">
+                <div class="title">
                     <a href="#">Primis In Faucibus</a>
                     <p>1 x <span> $65.00 </span></p>
                 </div>
@@ -168,7 +168,7 @@
             </div>
             <div class="cart_item">
                <div class="cart_img">
-                   <a href="#"><img src="../../../public/assets/front/imgf/product/product2.jpg" alt=""></a>
+                   <a href="#"><img src="<?=ROOT?>/assets/front/imgf/product/product2.jpg" alt=""></a>
                </div>
                 <div class="cart_info">
                     <a href="#">Letraset Sheets</a>
@@ -262,7 +262,7 @@
                                 <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
                             </div>
                             <div class="header_logo">
-                                <a class="sticky_none" href="index.html"><img src="../../../public/assets/front/imgf/logo/logo.png" alt=""></a>
+                                <a class="sticky_none" href="index.html"><img src="<?=ROOT?>/assets/front/imgf/logo/logo.png" alt=""></a>
                             </div>
                             <!--main menu start-->
                             <div class="main_menu d-none d-lg-block">
@@ -341,45 +341,16 @@
 
     <!--product details start-->
     <section class="product_details mb-135">
-        <div class="container">
+        <div class="container" id="item1">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="product_zoom_gallery">
                        <div class="zoom_gallery_inner d-flex">
-                           <div class="zoom_tab_img">
-                                <a class="zoom_tabimg_list" href="javascript:void(0)"><img src="../../../public/assets/front/imgf/product/small-product/product1.png" alt="tab-thumb"></a>
-                                <a class="zoom_tabimg_list" href="javascript:void(0)"><img src="../../../public/assets/front/imgf/product/small-product/product3.png" alt="tab-thumb"></a>
-                                <a class="zoom_tabimg_list" href="javascript:void(0)"><img src="../../../public/assets/front/imgf/product/small-product/product4.png" alt="tab-thumb"></a>
-                                <a class="zoom_tabimg_list" href="javascript:void(0)"><img src="../../../public/assets/front/imgf/product/small-product/product2.png" alt="tab-thumb"></a>
-                                <a class="zoom_tabimg_list" href="javascript:void(0)"><img src="../../../public/assets/front/imgf/product/small-product/product1.png" alt="tab-thumb"></a>
-                                <a class="zoom_tabimg_list" href="javascript:void(0)"><img src="../../../public/assets/front/imgf/product/small-product/product2.png" alt="tab-thumb"></a>
-                                <a class="zoom_tabimg_list" href="javascript:void(0)"><img src="../../../public/assets/front/imgf/product/small-product/product3.png" alt="tab-thumb"></a>
-                                <a class="zoom_tabimg_list" href="javascript:void(0)"><img src="../../../public/assets/front/imgf/product/small-product/product4.png" alt="tab-thumb"></a>
-                           </div>
+                           
                            <div class="product_zoom_main_img">
+                                <!-- -->
                                 <div class="product_zoom_thumb">
-                                    <img data-image="../../../public/assets/front/imgf/product/big-product/product1.png" src="../../../public/assets/front/img/product/big-product/product1.png" alt="">
-                                </div>
-                                <div class="product_zoom_thumb">
-                                    <img data-image="../../../public/assets/front/imgf/product/big-product/product1.png" src="../../../public/assets/front/imgf/product/big-product/product1.png" alt="">
-                                </div>
-                                <div class="product_zoom_thumb">
-                                    <img data-image="../../../public/assets/front/imgf/product/big-product/product1.png" src="../../../public/assets/front/imgf/product/big-product/product1.png" alt="">
-                                </div>
-                                <div class="product_zoom_thumb">
-                                    <img data-image="../../../public/assets/front/imgf/product/big-product/product1.png" src="../../../public/assets/front/imgf/product/big-product/product1.png" alt="">
-                                </div>
-                                <div class="product_zoom_thumb">
-                                    <img data-image="../../../public/assets/front/imgf/product/big-product/product1.png" src="../../../public/assets/front/imgf/product/big-product/product1.png" alt="">
-                                </div>
-                                <div class="product_zoom_thumb">
-                                    <img data-image="../../../public/assets/front/imgf/product/big-product/product1.png" src="../../../public/assets/front/imgf/product/big-product/product1.png" alt="">
-                                </div>
-                                <div class="product_zoom_thumb">
-                                    <img data-image="../../../public/assets/front/imgf/product/big-product/product1.png" src="../../../public/assets/front/imgf/product/big-product/product1.png" alt="">
-                                </div>
-                                <div class="product_zoom_thumb">
-                                    <img data-image="../../../public/assets/front/imgf/product/big-product/product1.png" src="../../../public/assets/front/imgf/product/big-product/product1.png" alt="">
+                                    <img src="<?=ROOT?>/img/<?=$details[0]->pro_pic?>" alt="">
                                 </div>
                             </div>
                         </div>
@@ -388,7 +359,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="product_d_right">
                        <form action="#">
-                            <h1><?=$details->name?></h1>
+                            <h1><?=$details[0]->name?></h1>
                             <div class="product_ratting_review d-flex align-items-center">
                                 <div class=" product_ratting">
                                     <ul class="d-flex">
@@ -407,7 +378,7 @@
                                 </div>
                             </div>
                             <div class="price_box">
-                                <span class="current_price">priiiice</span>
+                                <span class="current_price" style="color: #800000;"><?=$details[0]->price?>$ </span>
                             </div>
                             <div class="product_availalbe">
                                 <ul class="d-flex">
@@ -416,7 +387,7 @@
                                 </ul>
                             </div>
                             <div class="product_desc">
-                                <p>A t-shirt that comes in three colors (red, white and blue) and three sizes (small, medium, large) is a configurable product.  </p>
+                                <p><?=$details[0]->description?></p>
                             </div>
                             <div class="product_variant">
                                 <div class="filter__list widget_color d-flex align-items-center">
@@ -465,8 +436,8 @@
                                     <div class="pro-qty border">
                                         <input min="1" max="100" type="tex" value="1">
                                     </div>
-                                    <button class="button btn btn-primary" type="submit"><i class="ion-android-add"></i> Add To Cart</button>
-                                    <a class="wishlist" href="#"><i class="ion-ios-heart"></i></a>
+                                    <button class="button btn btn-primary" href=""  onclick="addToCart()" ><i class="ion-android-add"></i> Add To Cart</button>
+                                    <a class="wishlist" ><i class="ion-ios-heart"></i></a>
                                 </div>
                             </div>
                             <div class="product_sku">
@@ -496,6 +467,7 @@
             </div>
         </div>
     </section>
+    
     <!--product details end-->
 
     <!--product info start-->
@@ -546,7 +518,7 @@
                                     <h2>1 review for Donec eu furniture</h2>
                                     <div class="reviews_comment_box">
                                         <div class="comment_thmb">
-                                            <img src="../../../public/assets/front/imgf/blog/comment2.jpg" alt="">
+                                            <img src="<?=ROOT?>/assets/front/imgf/blog/comment2.jpg" alt="">
                                         </div>
                                         <div class="comment_text">
                                             <div class="reviews_meta">
@@ -678,288 +650,7 @@
     <!--product info end-->
 
     <!--product area start-->
-    <section class="product_area related_products mb-118">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title mb-50">
-                        <h2>Related Products</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="product_container row">
-                <div class=" product_slick slick_slider_activation" data-slick='{
-                    "slidesToShow": 4,
-                    "slidesToScroll": 1,
-                    "arrows": true,
-                    "dots": false,
-                    "autoplay": false,
-                    "speed": 300,
-                    "infinite": true,
-                    "responsive":[
-                      {"breakpoint":992, "settings": { "slidesToShow": 3 } },
-                      {"breakpoint":768, "settings": { "slidesToShow": 2 } },
-                      {"breakpoint":300, "settings": { "slidesToShow": 1 } }
-                     ]
-                }'>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <a href="product-details.html" >
-                                        <img class="primary_img" src="../../../public/assets/front/imgf/product/product1.jpg" alt="consectetur">
-                                    </a>
-                                    <div class="product_action">
-                                        <ul>
-                                            <li class="wishlist"><a href="#" data-tippy="Wishlist" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-heart icons"></i></a></li>
-
-                                            <li class="quick_view"><a data-toggle="modal" data-target="#modal_box" data-tippy="Quick View" href="#" data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-size-fullscreen icons"></i></a></li>
-                                            <li class="compare"><a data-tippy="Compare" href="#" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-refresh icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <figcaption class="product_content text-center">
-                                    <div class="product_ratting">
-                                        <ul class="d-flex justify-content-center">
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><span>(4)</span></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details.html">Basic Joggin Shorts</a></h4>
-                                    <div class="price_box">
-                                        <span class="current_price">$26.00</span>
-                                        <span class="old_price">$62.00</span>
-                                    </div>
-                                    <div class="add_to_cart">
-                                        <a class="btn btn-primary" href="#" data-tippy="Add To Cart"  data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="top">Add To Cart</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <a href="product-details.html" >
-                                        <img class="primary_img" src="../../../public/assets/front/imgf/product/product2.jpg" alt="consectetur">
-                                    </a>
-                                    <div class="product_action">
-                                        <ul>
-                                            <li class="wishlist"><a href="#" data-tippy="Wishlist" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-heart icons"></i></a></li>
-
-                                            <li class="quick_view"><a data-toggle="modal" data-target="#modal_box" data-tippy="Quick View" href="#" data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-size-fullscreen icons"></i></a></li>
-                                            <li class="compare"><a data-tippy="Compare" href="#" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-refresh icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product_label">
-                                        <span>-20%</span>
-                                    </div>
-                                </div>
-                                <figcaption class="product_content text-center">
-                                    <div class="product_ratting">
-                                        <ul class="d-flex justify-content-center">
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><span>(6)</span></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details.html">Make Thing Happen T-Shirts</a></h4>
-                                    <div class="price_box">
-                                        <span class="text-black">$38.00</span>
-
-                                    </div>
-                                    <div class="add_to_cart">
-                                        <a class="btn btn-primary" href="#" data-tippy="Add To Cart"  data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="top">Add To Cart</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <a href="product-details.html" >
-                                        <img class="primary_img" src="../../../public/assets/front/imgf/product/product3.jpg" alt="consectetur">
-                                    </a>
-                                    <div class="product_action">
-                                        <ul>
-                                            <li class="wishlist"><a href="#" data-tippy="Wishlist" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-heart icons"></i></a></li>
-
-                                            <li class="quick_view"><a data-toggle="modal" data-target="#modal_box" data-tippy="Quick View" href="#" data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-size-fullscreen icons"></i></a></li>
-                                            <li class="compare"><a data-tippy="Compare" href="#" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-refresh icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product_label">
-                                        <span>-18%</span>
-                                    </div>
-                                </div>
-                                <figcaption class="product_content text-center">
-                                    <div class="product_ratting">
-                                        <ul class="d-flex justify-content-center">
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><span>(2)</span></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details.html">Basic White Simple Sneaker</a></h4>
-                                    <div class="price_box">
-                                        <span class="current_price">$43.00</span>
-                                        <span class="old_price">$46.00</span>
-                                    </div>
-                                    <div class="add_to_cart">
-                                        <a class="btn btn-primary" href="#" data-tippy="Add To Cart"  data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="top">Add To Cart</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <a href="product-details.html" >
-                                        <img class="primary_img" src="../../../public/assets/front/imgf/product/product4.jpg" alt="consectetur">
-                                    </a>
-                                    <div class="product_action">
-                                        <ul>
-                                            <li class="wishlist"><a href="#" data-tippy="Wishlist" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-heart icons"></i></a></li>
-
-                                            <li class="quick_view"><a data-toggle="modal" data-target="#modal_box" data-tippy="Quick View" href="#" data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-size-fullscreen icons"></i></a></li>
-                                            <li class="compare"><a data-tippy="Compare" href="#" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-refresh icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <figcaption class="product_content text-center">
-                                    <div class="product_ratting">
-                                        <ul class="d-flex justify-content-center">
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><span>(8)</span></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details.html">Simple Rounded Sunglasses</a></h4>
-                                    <div class="price_box">
-                                       <span class="text-black">$42.00</span>
-                                    </div>
-                                    <div class="add_to_cart">
-                                        <a class="btn btn-primary" href="#" data-tippy="Add To Cart"  data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="top">Add To Cart</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <a href="product-details.html" >
-                                        <img class="primary_img" src="../../../public/assets/front/imgf/product/product1.jpg" alt="consectetur">
-                                    </a>
-                                    <div class="product_action">
-                                        <ul>
-                                            <li class="wishlist"><a href="#" data-tippy="Wishlist" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-heart icons"></i></a></li>
-
-                                            <li class="quick_view"><a data-toggle="modal" data-target="#modal_box" data-tippy="Quick View" href="#" data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-size-fullscreen icons"></i></a></li>
-                                            <li class="compare"><a data-tippy="Compare" href="#" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-refresh icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <figcaption class="product_content text-center">
-                                    <div class="product_ratting">
-                                        <ul class="d-flex justify-content-center">
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><span>(12)</span></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="">Basic Joggin Shorts</a></h4>
-                                    <div class="price_box">
-                                        <span class="current_price">$26.00</span>
-                                        <span class="old_price">$362.00</span>
-                                    </div>
-                                    <div class="add_to_cart">
-                                        <a class="btn btn-primary" href="#" data-tippy="Add To Cart"  data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="top">Add To Cart</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <a href="product-details.html" >
-                                        <img class="primary_img" src="../../../public/assets/front/imgf/product/product2.jpg" alt="consectetur">
-                                    </a>
-                                    <div class="product_action">
-                                        <ul>
-                                            <li class="wishlist"><a href="#" data-tippy="Wishlist" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-heart icons"></i></a></li>
-
-                                            <li class="quick_view"><a data-toggle="modal" data-target="#modal_box" data-tippy="Quick View" href="#" data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-size-fullscreen icons"></i></a></li>
-                                            <li class="compare"><a data-tippy="Compare" href="#" data-tippy-inertia="true" data-tippy-delay="50"
-                                            data-tippy-arrow="true" data-tippy-placement="left"><i class="icon-refresh icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product_label">
-                                        <span>-20%</span>
-                                    </div>
-                                </div>
-                                <figcaption class="product_content text-center">
-                                    <div class="product_ratting">
-                                        <ul class="d-flex justify-content-center">
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><a href="#"><i class="ion-android-star"></i></a></li>
-                                            <li><span>(14)</span></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details.html">Simple Rounded Sunglasses</a></h4>
-                                    <div class="price_box">
-                                        <span class="current_price">$35.00</span>
-                                        <span class="old_price">$38.00</span>
-                                    </div>
-                                    <div class="add_to_cart">
-                                        <a class="btn btn-primary" href="#" data-tippy="Add To Cart"  data-tippy-inertia="true" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-placement="top">Add To Cart</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!--product area end-->
 
     <!--newsletter section start-->
@@ -1000,7 +691,7 @@
                 <div class="col-lg-5 col-md-5 col-sm-5">
                     <div class="footer_widget_list">
                         <div class="footer_logo">
-                            <a href="#"><img src="../../../public/assets/front/imgf/logo/logo.png" alt=""></a>
+                            <a href="#"><img src="<?=ROOT?>/assets/front/imgf/logo/logo.png" alt=""></a>
                         </div>
                         <div class="footer_contact">
                             <div class="footer_contact_list">
@@ -1062,7 +753,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="modal_zoom_gallery">
                                    <div class="product_zoom_thumb">
-                                        <img src="../../../public/assets/front/imgf/product/big-product/product1.png" alt="">
+                                        <img src="<?=ROOT?>/assets/front/imgf/product/big-product/product1.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -1129,24 +820,25 @@
 <!-- JS
 ============================================ -->
 
-<script src="../../../public/assets/front/jsf/vendor/jquery-3.4.1.min.js"></script>
-<script src="../../../public/assets/front/jsf/vendor/popper.js"></script>
-<script src="../../../public/assets/front/jsf/vendor/bootstrap.min.js"></script>
-<script src="../../../public/assets/front/jsf/slick.min.js"></script>
-<script src="../../../public/assets/front/jsf/wow.min.js"></script>
-<script src="../../../public/assets/front/jsf/jquery.scrollup.min.js"></script>
-<script src="../../../public/assets/front/jsf/images-loaded.min.js"></script>
-<script src="../../../public/assets/front/jsf/isotope.pkgd.min.js"></script>
-<script src="../../../public/assets/front/jsf/jquery.nice-select.js"></script>
-<script src="../../../public/assets/front/jsf/tippy-bundle.umd.js"></script>
-<script src="../../../public/assets/front/jsf/jquery-ui.min.js"></script>
-<script src="../../../public/assets/front/jsf/jquery.instagramFeed.min.js"></script>
-<script src="../../../public/assets/front/jsf/jquery.magnific-popup.min.js"></script>
-<script src="../../../public/assets/front/jsf/mailchimp-ajax.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/vendor/jquery-3.4.1.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/vendor/popper.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/vendor/bootstrap.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/slick.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/wow.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/jquery.scrollup.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/images-loaded.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/isotope.pkgd.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/jquery.nice-select.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/tippy-bundle.umd.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/jquery-ui.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/jquery.instagramFeed.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/jquery.magnific-popup.min.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/mailchimp-ajax.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/panel.js"></script>
 
 
 <!-- Main JS -->
-<script src="../../../public/assets/front/jsf/main.js"></script>
+<script src="<?=ROOT?>/assets/front/jsf/main.js"></script>
 
 
 </body>
