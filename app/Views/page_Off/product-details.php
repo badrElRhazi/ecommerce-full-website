@@ -133,7 +133,7 @@
     </div>
     <!--offcanvas menu area end-->
     <!--mini cart-->
-    <div class="mini_cart">
+    <div class="mini_cart" id="miniCartContainer">
         <div class="cart_gallery">
             <div class="cart_close">
                 <div class="cart_text">
@@ -145,38 +145,27 @@
             </div>
             <div class="cart_item">
                <div class="cart_img">
-                   <a href="#"><img src="<?=ROOT?>/assets/front/imgf/product/product1.jpg" alt=""></a>
+                   <a href="#"><img src="<?=ROOT?>/img/<?=$details[0]->pro_pic?>" alt=""></a>
                </div>
                 <div class="title">
-                    <a href="#">Primis In Faucibus</a>
-                    <p>1 x <span> $65.00 </span></p>
+                    <a href="#"><?=$details[0]->name?></a>
+                    <p><span style="color: #800000;"> <b><?=$details[0]->price?> $</b> </span></p>
                 </div>
                 <div class="cart_remove">
                     <a href="#"><i class="icon-close icons"></i></a>
                 </div>
             </div>
-            <div class="cart_item">
-               <div class="cart_img">
-                   <a href="#"><img src="<?=ROOT?>/assets/front/imgf/product/product2.jpg" alt=""></a>
-               </div>
-                <div class="cart_info">
-                    <a href="#">Letraset Sheets</a>
-                    <p>1 x <span> $60.00 </span></p>
-                </div>
-                <div class="cart_remove">
-                    <a href="#"><i class="icon-close icons"></i></a>
-                </div>
-            </div>
+            
         </div>
         <div class="mini_cart_table">
             <div class="cart_table_border">
-                <div class="cart_total">
+                <!-- <div class="cart_total">
                     <span>Sub total:</span>
                     <span class="price">$125.00</span>
-                </div>
+                </div> -->
                 <div class="cart_total mt-10">
-                    <span>total:</span>
-                    <span class="price">$125.00</span>
+                    <span style="text-decoration: solid;">TOTAL:</span>
+                    <span class="price"> <span style="color: #800000;"> <b><?=$details[0]->price?> $</b> </span>
                 </div>
             </div>
         </div>
@@ -422,10 +411,14 @@
                                 </div>
 
                                 <div class="variant_quantity_btn d-flex">
-                                    <div class="pro-qty border">
-                                        <input min="1" max="100" type="tex" value="1">
-                                    </div>
-                                    <button class="button btn btn-primary" href=""  onclick="addToCart()" ><i class="ion-android-add"></i> Add To Cart</button>
+                                    <!-- <div class="pro-qty border">
+                                        <input min="1" max="100" name="quantity" type="tex" value="1">
+                                    </div> -->
+                                    <form method="POST">
+    <input type="hidden" name="product_id" value="<?=$details[0]->id?>">
+    <button class="button btn btn-primary add-to-wishlist" id="produit" data-product-id="<?=$details[0]->id?>">Add to Wishlist</button>
+</form>
+
                                     <a class="wishlist" ><i class="ion-ios-heart"></i></a>
                                 </div>
                             </div>
@@ -823,13 +816,55 @@
 <script src="<?=ROOT?>/assets/front/jsf/jquery.instagramFeed.min.js"></script>
 <script src="<?=ROOT?>/assets/front/jsf/jquery.magnific-popup.min.js"></script>
 <script src="<?=ROOT?>/assets/front/jsf/mailchimp-ajax.js"></script>
-<script src="<?=ROOT?>/assets/front/jsf/panel.js"></script>
+<!-- <script src="<?=ROOT?>/assets/front/jsf/panel.js"></script> -->
 
 
 <!-- Main JS -->
 <script src="<?=ROOT?>/assets/front/jsf/main.js"></script>
 
+<script>
+    // Event handler for Add to Wishlist button
+    function addToWishlist(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
 
+        // Get the product ID from the data attribute
+        const productId = this.dataset.productId;
+
+        // Create an XMLHttpRequest object
+        const xhr = new XMLHttpRequest();
+
+        // Define the callback function for the AJAX request
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    // Request completed successfully
+                    const response = JSON.parse(xhr.responseText);
+
+                    if (response.success) {
+                        // Product added to wishlist successfully
+                        // Update the mini cart
+                        updateMiniCart();
+                    } 
+                }
+            }
+        };
+
+        // Send the AJAX request with the product ID
+        xhr.send('productId=' + encodeURIComponent(productId));
+    }
+
+    // Function to update the mini cart
+    
+
+    // Get the Add to Wishlist buttons
+    const addToWishlistButtons = document.querySelectorAll('.add-to-wishlist');
+
+    // Add a click event listener to each button
+    addToWishlistButtons.forEach(button => {
+        button.addEventListener('click', addToWishlist);
+    });
+</script>
 </body>
 
 </html>
